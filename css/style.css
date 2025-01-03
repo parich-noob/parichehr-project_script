@@ -22,7 +22,7 @@ body {
 }
 
 .header_section {
-  background-color: #ffffff;
+  background-color: #fafeff;
 }
 
 .header_section .container-fluid {
@@ -161,121 +161,151 @@ a:focus {
 
 /*end header section*/
 /* slider section */
+/* General carousel styling */
 .slider_section {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   position: relative;
-  background-color: #f9fafa;
+  padding: 50px 0;
+  background-color: #ffecd6;
 }
 
-.slider_section .row {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.carousel {
+  position: relative;
 }
 
-.slider_section #customCarousel {
-  width: 100%;
-  z-index: 3;
+.carousel-inner {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.slider_section .detail-box {
-  color: #000000;
+/* Carousel content styling */
+.detail-box {
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: left;
 }
 
-.slider_section .detail-box h1 {
+.detail-box h1 {
   font-family: "Rubik Doodle Shadow", sans-serif;
+  font-size: 2.5rem;
   font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 0;
+  margin-bottom: 20px;
+  color: #333;
 }
 
-.slider_section .detail-box p {
+.detail-box p {
   font-family: "Schoolbell", sans-serif;
-  margin: 25px 0;
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
 }
 
-.slider_section .detail-box .btn-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 -5px;
+.btn-box .btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
 }
 
-.slider_section .detail-box .btn-box a {
-  margin: 5px;
-  text-align: center;
-  width: 165px;
+.btn-primary {
+  background-color: #183a5e;
+  color: #fff;
+  border: none;
 }
 
-.slider_section .detail-box .btn-box .btn1 {
-  display: inline-block;
-  padding: 10px 15px;
-  background-color: #f89646;
-  color: #ffffff;
-  border-radius: 0;
-  border: 1px solid #f89646;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+.btn-primary:hover {
+  background-color: #0056b3;
 }
 
-.slider_section .detail-box .btn-box .btn1:hover {
-  background-color: transparent;
-  color: #f89646;
+.btn-secondary {
+  background-color: #183a5e;
+  color: #fff;
+  border: none;
 }
 
-.slider_section .detail-box .btn-box .btn2 {
-  display: inline-block;
-  padding: 10px 15px;
-  background-color: #6bb7be;
-  color: #ffffff;
-  border-radius: 0;
-  border: 1px solid #6bb7be;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+.btn-secondary:hover {
+  background-color: #565e64;
 }
 
-.slider_section .detail-box .btn-box .btn2:hover {
-  background-color: transparent;
-  color: #6bb7be;
+.btn-info {
+  background-color: #183a5e;
+  color: #fff;
+  border: none;
 }
 
-.slider_section .img-box img {
+.btn-info:hover {
+  background-color: #117a8b;
+}
+
+/* Image styling */
+.img-box img {
   width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
-.slider_section .carousel-indicators {
-  position: unset;
-  margin: 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 45px;
+/* Controls styling */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
 }
 
-.slider_section .carousel-indicators li {
-  background-color: #6bb7be;
-  width: 12px;
-  height: 12px;
-  border-radius: 100%;
-  opacity: 1;
+.carousel-control-prev,
+.carousel-control-next {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
 }
 
-.slider_section .carousel-indicators li.active {
-  width: 17px;
-  height: 17px;
-  background-color: #f89646;
+/* Indicators styling */
+.carousel-indicators button {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
 }
+
+.carousel-indicators .active {
+  background-color: #007bff;
+}
+
+
+@media (max-width: 768px) {
+  .detail-box h1 {
+    font-size: 2rem;
+  }
+
+  .detail-box p {
+    font-size: 0.9rem;
+  }
+
+  .btn-box .btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-inner {
+    border-radius: 0;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .carousel-indicators button {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+/* end of slider section */
 
 .furniture_section .box {
   margin-top: 45px;
