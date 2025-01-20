@@ -34,48 +34,54 @@
   <div class="hero_area">
     <!-- header starts -->
     <header class="header_section long_section px-0">
-      <nav class="navbar navbar-expand-lg custom_nav-container ">
+      <nav class="navbar navbar-expand-lg custom_nav-container">
         <a class="navbar-brand" href="index.html">
           <img src="photo/logo pack.png" alt="logo img">
-          <span>
-            RoamReady
-          </span>
+          <span>RoamReady</span>
         </a>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class=""> </span>
+          <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
-            <ul class="navbar-nav  ">
-              <li class="nav-item ">
+            <ul class="navbar-nav">
+              <li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
               </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="account.html"> Account</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="account.html" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Account
+                </a>
+                <ul class="dropdown-menu">
+                  <li><button class="dropdown-item" href="#">Dashboard</button></li>
+                  <li><a class="dropdown-item" href="#">My collection</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><button type="button" class="btn btn-danger">Log Out</button></li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="news.html">News</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
+              <li class="nav-item ">
+                <a class="nav-link" href="about.html" class="active">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact Us</a>
               </li>
             </ul>
           </div>
-          <div class="quote_btn-container">
-            <a href="">
-              <span>
-                Login
-              </span>
+          <div class="quote_btn-container d-flex align-items-center">
+            <a href="login.html" class="me-3">
+              <span>Login</span>
               <i class="fa fa-user" aria-hidden="true"></i>
             </a>
-            <form class="form-inline">
-              <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+            <form class="d-flex">
+              <button class="btn my-2 my-sm-0 nav_search-btn" type="submit">
                 <i class="fa fa-search" aria-hidden="true"></i>
               </button>
             </form>
@@ -84,7 +90,6 @@
       </nav>
     </header>
     <!-- end header section -->
-  </div>
 
   <!-- about section -->
 
@@ -145,7 +150,7 @@
   </footer>
 
 
-  <script src="js/bootstrap.js"></script>
+  <script src="js/bootstrap5-3.js"></script>
 
 
 </body>
