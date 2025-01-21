@@ -19,7 +19,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&family=Schoolbell&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&family=Schoolbell&display=swap"
+    rel="stylesheet">
 
 
   <link href="fontawesome-free-6.6.0-web/css/all.min.css" rel="stylesheet" />
@@ -28,93 +29,140 @@
 
 
 </head>
+
 <body>
-    <header class="header_section long_section px-0">
-        <nav class="navbar navbar-expand-lg custom_nav-container">
-          <a class="navbar-brand" href="index.html">
-            <img src="photo/logo pack.png" alt="logo img">
-            <span>RoamReady</span>
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-  
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="account.html" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Account
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><button class="dropdown-item" href="#">Dashboard</button></li>
-                    <li><a class="dropdown-item" href="#">My collection</a></li>
-                    <li>
-                      <hr class="dropdown-divider">
-                    </li>
-                    <li><button type="button" class="btn btn-danger">Log Out</button></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="news.html" class="active">News</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact Us</a>
-                </li>
-              </ul>
-            </div>
-            <div class="quote_btn-container d-flex align-items-center">
-              <a href="login.html" class="me-3">
-                <span>Login</span>
-                <i class="fa fa-user" aria-hidden="true"></i>
+  <header class="header_section px-0">
+    <nav class="navbar navbar-expand-lg custom_nav-container">
+      <a class="navbar-brand" href="index.html">
+        <img src="photo/logo pack.png" alt="logo img">
+        <span>RoamReady</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html" class="active">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Account
               </a>
-              <form class="d-flex">
-                <button class="btn my-2 my-sm-0 nav_search-btn" type="submit">
-                  <i class="fa fa-search" aria-hidden="true"></i>
-                </button>
-              </form>
+              <ul class="dropdown-menu">
+                <li><button class="dropdown-item" href="#">Dashboard</button></li>
+                <li><a class="dropdown-item" href="#">My collection(library)</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><button type="button" class="btn btn-danger">Log Out</button></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="news.html">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="quote_btn-container d-flex align-items-center">
+          <a href="login.html" class="me-3">
+            <span>Login</span>
+            <i class="fa fa-user" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="news_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>Latest News</h2>
+      </div>
+  
+      <div class="row">
+        <div class="col-12">
+          <div class="news_particle">
+            <div class="img-box">
+              <img src="photo/aptopix-california-wildfires.jpg" alt="">
             </div>
-          </div>
-        </nav>
-      </header>
-
-
-
-    <footer>
-        <div class="footer-container">
-          <div class="column">
-            <h2>RoamReady</h2>
-            <p>Your go-to platform for travel planning!</p>
-          </div>
-    
-          <div class="column">
-            <h2>Pages</h2>
-            <ul>
-              <li><a href="#index">Home</a></li>
-              <li><a href="#news">News</a></li>
-              <li><a href="#account">Account</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-    
-          <div class="column">
-            <h3>Follow Us</h3>
-            <div class="social-icons">
-              <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-              <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-              <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+            <div class="detail-box">
+              <h5>California’s New BBQ Recipe: Forest Edition !</h5>
+              <p>The Golden State is heating up—literally! While the fire rages, some adventurous folks are already pitching ‘flame-grilled marshmallow tours.’ Travel responsibly (or pack extra marshmallows).</p>
+              <a href="">Read More</a>
             </div>
           </div>
         </div>
-      </footer>    
+  
+        <div class="col-12">
+          <div class="news_particle">
+            <div class="img-box">
+              <img src="photo/d1cf7d5a764a693e60fb6a5baae1e48b115ea721.webp" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>Shomal Goes Full Pinterest: Green, Wet, and Unreasonably Gorgeous!</h5>
+              <p>Lush forests, cozy cottages, and the kind of Instagram views that make you rethink your office job—Shomal is the place to get lost (in nature, not Google Maps). Tours now include tea-drinking with locals</p>
+              <a href="">Read More</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-12">
+          <div class="news_particle">
+            <div class="img-box">
+              <img src="photo/Ski-1018-509.webp" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>Tochal: Where Snowflakes and Selfies Collide !</h5>
+              <p>Iran’s winter wonderland is calling! Whether you ski like a pro or fall like a pro, Tochal’s slopes are ready to embarrass you. Travel packages now come with free hot cocoa and snowball fights!</p>
+              <a href="">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <footer>
+    <div class="footer-container">
+      <div class="column">
+        <h2>RoamReady</h2>
+        <p>Your go-to platform for travel planning!</p>
+      </div>
+
+      <div class="column">
+        <h2>Pages</h2>
+        <ul>
+          <li><a href="#index">Home</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#account">Account</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="column">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap5-3.js"></script>
+
 </body>
+ 
 </html>

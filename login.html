@@ -28,31 +28,47 @@
 </head>
 
 <body>
-<section class="login-section">
-    <div class="wrapper">
-        <form action="">
-            <h1>Login</h1>
-            <div class="input-box">
-                <input type="text" placeholder="Username" required>
-                    <i class="fa-solid fa-user"></i>
-            </div>
-            <div class="input-box">
-                <input type="password" placeholder="Password" required>
-                <i class="fa-solid fa-lock"></i>
-            </div>
-
-            <div class="remember-forgot">
-                <label><input type="checkbox">Remember Me</label>
-                <a href="#">Forgot password?</a>
-            </div>
-            <button type="submit" class="btn" onclick="window.location.href='index.html';">Login</button>
-
-            <div class="register-link">
-                <p>Don't have an account? <a href="#">Register</a></p>
-            </div>
-        </form>
+    <div class="exit-button">
+        <button type="button" class="btn-close" aria-label="Close" onclick="window.location.href='index.html';"></button>
     </div>
-</section>
+    <section class="login-section">
+        <div class="wrapper">
+            <form action="">
+                <h1>Login</h1>
+                <div class="input-box">
+                    <span class="tt" data-bs-placement="right" title="tgwrgr">
+                    <input type="text" placeholder="Username" required>
+                    <i class="fa-solid fa-user"></i>
+                </span>
+                </div>
+                <div class="input-box">
+                        <input type="password" placeholder="Password" data-bs-toggle="tooltip" 
+                        data-bs-placement="right" 
+                        title="Use at least 8 characters, including 1 number"  required>
+                        <i class="fa-solid fa-lock"></i>
+                </div>
+
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remember Me</label>
+                    <a href="#">Forgot password?</a>
+                </div>
+                <button type="submit" class="btn" onclick="window.location.href='index.html';">Login</button>
+
+                <div class="register-link">
+                    <p>Don't have an account? <a href="#">Register</a></p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
 </body>
+
+<script src="js/bootstrap5-3.js"></script>
+
+<script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+</script>
 
 </html>
