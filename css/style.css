@@ -775,7 +775,7 @@ iframe {
   }
 }
 
-@media (max-width: 375px) {
+@media (min-width: 360px) {
   .contact_section {
     display: flex;
     flex-direction: column;
